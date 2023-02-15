@@ -15,6 +15,8 @@ document.getElementById("btn-case-plus").addEventListener('click', function(){
     const totalCase = document.getElementById("case-total");
     totalCase.innerText = caseTotalPrice;
 
+    // sub total
+    subtotal()
 
 })
 
@@ -33,6 +35,7 @@ document.getElementById('btn-case-minus').addEventListener("click", function(){
       const caseTotalPrice = newDecrementNumber * 59;
       const totalCase = document.getElementById("case-total");
       totalCase.innerText = caseTotalPrice;
+      subtotal()
 });
 
 
